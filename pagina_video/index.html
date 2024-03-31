@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="utf-8">
+    <title>Video</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Capçalera -->
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            <img class="logo" src="../historial/images/YouTubeLogo.png" alt="logo">
+        </span>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Cerca" aria-label="Cerca">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </form>
+        <div class="upload-video-div">
+            <i class="fa fa-video-camera fa-6" aria-hidden="true"></i>
+            <i class="fa fa-th" aria-hidden="true"></i>
+            <i class="fa fa-comment" aria-hidden="true"></i>
+            <i class="fa fa-bell" aria-hidden="true"></i>
+            <button type="button" class="btn btn-outline-primary login-button"><i class="fa fa-user-circle" aria-hidden="true"></i> INICIA LA SESSIÓ</button>
+        </div>
+    </nav>
+
+    <!-- Secció de vídeos recomanats -->
+    <div class="container">
+        <div class="row">
+            <!-- Vídeo actual -->
+            <div class="col-lg-9">
+                <div class="video-info">
+                    <iframe width="900" height="515" src="https://www.youtube.com/embed/cJOXu8CwDgM" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video-title">Música de flauta relaxant, música per dormir, música tranquil·la, insomni, estudiar ☯1949</div>
+                    <div class="number-of-views"><span>123,123,000 visualitzacions</span></div>
+                    <div class="like-and-dislike-section">
+                        <i class="fa fa-thumbs-up fa-6 like-share-elements" aria-hidden="true"></i> <span class='likes-share like-share-elements'>123</span>
+                        <i class="fa fa-thumbs-down fa-6 like-share-elements" aria-hidden="true"></i> <span class='likes-share like-share-elements'>5</span>
+                        <i class="fa fa-share like-share-elements"></i><span class='likes-share like-share-elements'>COMPARTIR</span>
+                    </div>
+                    <div class='user-info'>
+                        <button class="btn btn-primary subscribe-button">SUBSCRIPCIÓ</button>
+                        <img class='user-pic' src="https://agora.xtec.cat/iesrafaelcampalans/wp-content/uploads/usu1643/2017/09/logonom-1.png" alt="imatge de perfil de l'usuari">
+                        <span class='user-name'>Benjamin Parker</span>
+                        <br>
+                        <span class='num-subscribers'>2,8 mi subscriptors</span>
+                        <div class='video-description'>Aquí teniu una compilació de cançons de la natura per relaxar-vos i gaudir del vostre temps lliure.</div>
+                        <div class='description-show-more'>MOSTRA MÉS</div>
+                    </div>
+                    <!-- Secció de comentaris -->
+                    <div class="comments-review">
+                        <span>810 Comentaris</span>
+                        <i class="fa fa-sort-amount-desc" aria-hidden="true"></i> <span class="sort-by">ORDENA PER</span>
+                    </div>
+                    <div class="grid-comments">
+                        <!-- Reixeta de comentaris -->
+                        <!-- Aquí va la teva reixeta de comentaris -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Secció de vídeos recomanats -->
+            <div class="col-lg-3">
+                <div class="recommended-videos">
+                    <!-- El contingut dels vídeos recomanats va aquí -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

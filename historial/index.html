@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://www.youtube.com/s/desktop/c9b284c3/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/index.css">
+    <style>
+        .video-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .video-card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .video-card-content {
+            margin-top: 10px;
+        }
+
+        .video-title {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .video-channel {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .video-views {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="images/YouTubeLogo.png" width="80" height="" alt="">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="mt-3">
+                    <h4>Historial de visualització</h4>
+                </div>
+                <div id="historycontent">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="video-card">
+                                <img src="https://via.placeholder.com/240x150" alt="Miniatura del vídeo">
+                                <div class="video-card-content">
+                                    <div class="video-title">Títol del vídeo</div>
+                                    <div class="video-channel">Nom del canal</div>
+                                    <div class="video-views">100k visualitzacions</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="video-card">
+                                <img src="https://via.placeholder.com/240x150" alt="Miniatura del vídeo">
+                                <div class="video-card-content">
+                                    <div class="video-title">Títol del vídeo</div>
+                                    <div class="video-channel">Nom del canal</div>
+                                    <div class="video-views">100k visualitzacions</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="video-card">
+                                <img src="https://via.placeholder.com/240x150" alt="Miniatura del vídeo">
+                                <div class="video-card-content">
+                                    <div class="video-title">Títol del vídeo</div>
+                                    <div class="video-channel">Nom del canal</div>
+                                    <div class="video-views">100k visualitzacions</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mt-3">
+                    <h3>Tipus d'historial</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="watchhistory" checked>
+                        <label class="form-check-label" for="watchhistory">
+                            Historial de visualització
+                        </label>
+                    </div>
+                    <div class="mt-3">
+                        <img src="../../images/icons8-trash-50.png" alt="" id="trashicon" height="20">
+                        <span id="clearhistory">NETEJA TOT L'HISTORIAL DE VISUALITZACIÓ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/7a0b7110fe.js" crossorigin="anonymous"></script>
+    <script src="./scripts/navbar.js"></script>
+    <script src="./scripts/history.js" type="module"></script>
+</body>
+</html>
